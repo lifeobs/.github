@@ -1,5 +1,8 @@
 # lifeobs: admin guide
 
+*Last updated: 28 October 2026 - Amélie Fargevieille*
+
+
 How we organize the GitHub organization and the Zenodo community.
 Intended for owners and repository admins.
 
@@ -8,6 +11,7 @@ Intended for owners and repository admins.
 - **Zenodo community `lifeobs`**: groups the archived releases (DOIs) produced by the team.
 - Contacts:
    > Céline Le Bohec - celine.lebohec@cefe.cnrs.fr
+   > 
    > Amélie Fargevieille - afargevieille@centrescientifique.mc
 
 ## 2. Repository types
