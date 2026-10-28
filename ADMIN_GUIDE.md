@@ -10,9 +10,9 @@ Intended for owners and repository admins.
 - **GitHub organization `lifeobs`**: where the team's repositories live.
 - **Zenodo community `lifeobs`**: groups the archived releases (DOIs) produced by the team.
 - Contacts:
-   > Céline Le Bohec - celine.lebohec@cefe.cnrs.fr
+   > Céline Le Bohec - celine.lebohec[at]cefe.cnrs.fr
    > 
-   > Amélie Fargevieille - afargevieille@centrescientifique.mc
+   > Amélie Fargevieille - afargevieille[at]centrescientifique.mc
 
 ## 2. Repository types
 | Type | Visibility | Examples |
