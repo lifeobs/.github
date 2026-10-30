@@ -29,14 +29,51 @@ Intended for owners and repository admins.
   plus two or three topical keywords.
 
 ## 4. Roles and teams
-- **Owners**: manage the organization settings and create repositories.
-- **Teams**: *to be defined* (access to the wiki and to the software repositories
-  is under discussion with the PI).
-- **Outside collaborators**: people who work on a single repository.
-- Until the teams are defined, access is given per repository by an owner.
-- Repository role guide: Write for contributors, Maintain for project leads,
-  Admin only for whoever must enable the Zenodo integration (admin rights are required).
-- Invitations expire after a few days: check Settings > People > Invitations.
+### 4.1 Organization roles
+- **Owner**: manages the organization settings and teams, creates repositories
+  (for now, only owners create repositories) and can change a repository's visibility.
+  There must always be at least two owners.
+- **Member**: belongs to the organization; access to repositories comes only from teams
+  or from permissions given on a repository (base permission is "No permission").
+
+### 4.2 Teams
+| Team | Who | Software repositories | Wiki | Article repositories |
+|---|---|---|---|---|
+| `members` (parent) | Everyone in the team: students, collaborators, field assistants | Read | Write | none by default |
+| `software-dev` (child of `members`) | People who maintain the software | Write | Write (inherited) | none by default |
+
+- A child team inherits the access of its parent team.
+- A person can belong to several teams.
+- Teams are kept "Visible" so that they can be nested.
+
+### 4.3 Article repositories
+- A person who starts an article asks an owner to create the repository
+  from `template-article-scripts` (named `year-lastname-topic`).
+- The owner sets the description, topics and custom properties
+  (see the checklist in section 5).
+- Access is given **person by person** (Write; Admin only for whoever enables the Zenodo
+  integration), not through teams.
+
+### 4.4 Outside collaborators
+People who work on a single repository and are not members of the organization
+(external collaborators, for example) are added directly to that repository with the
+appropriate role (Read or Write).
+
+### 4.5 Onboarding and offboarding
+- **Onboarding**: invite the person to the organization (invitations expire after a few
+  days: check Settings > People > Invitations), add them to `members`, and to
+  `software-dev` only if they maintain software. Add them to article repositories
+  individually when they take part in an article.
+- **Offboarding**: remove the person from teams and from repositories where they were
+  added individually. Check that they have no ongoing release or pending invitation.
+- **Review**: check the member list at every change of season or semester.
+  Teams do not expire automatically.
+
+### 4.6 Repository role guide
+- **Read**: install and read software, read the wiki.
+- **Write**: contribute to a repository (article scripts, software, wiki).
+- **Maintain**: manage a repository without changing sensitive settings.
+- **Admin**: only for whoever must enable the Zenodo integration (admin rights are required).
 
 ## 5. Creating a new article repository (checklist for owners)
 1. Create it from `template-article-scripts` ("Use this template").
